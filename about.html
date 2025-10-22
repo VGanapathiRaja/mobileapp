@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon">
+    <title>Start up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            background-color: rgb(28, 16, 2);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center ;
+        }
+        header .logo .menutoggle{
+            display: none;
+        }
+        .logo img{
+            width: 70px;
+            padding: 10px;
+        }
+        .navbar ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .navbar ul li:hover{
+            background-color: rgb(39, 40, 40);
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .navbar ul li a:hover{
+            font-weight: 400;
+            transition: all 0.5s ease-in-out;
+        }
+        .navbar .supermenu{
+            position: relative;
+        }
+        .navbar .supermenu:hover .dropdown{
+            display: block;
+        }
+        .navbar .dropdown{
+            position: absolute;
+            left: 0;
+            display: none;
+        }
+        .navbar .dropdown li{
+            display: block;
+            width: 250px;
+            background-color: #000;
+            margin: 10px 0;
+        }
+        .navbar .btncontact{
+            background-color: #ec7499;
+            border: 1px solid #ec7499;
+            border-radius: 5px;
+        }
+        .navbar .btncontact:hover{
+            background-color: #e33168;
+        }
+
+
+
+.heading{
+    padding: 10px 25px;
+    margin: 10px
+}
+.heading h1{
+    font-size: 36px;
+    padding: 10px;
+}
+.heading p{
+    padding: 10px;
+}
+.heading .line hr{
+    border: 3px solid black;
+    width: 300px;
+    border-radius: 10px;
+}        
+/* about */
+.aboutimg{
+    width: 600px;
+    position: relative;
+}
+.aboutimg img{
+    width: 500px;
+    margin: 10px;
+    border-radius: 40px;
+    box-shadow: 0px -6px 14px 4px #767171bf;
+}
+.aboutimg .aboutimgcontent{
+    /* background-color: #ec7499; */
+    background: radial-gradient(circle,rgba(63, 94, 251, 0.78) 0%, rgba(252, 70, 107, 1) 100%);
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 350px;
+    position: absolute;
+    /* top: 100px; */
+    bottom: 60px;
+    left: -55px;
+}
+.aboutcontent{
+    width: 600px;
+    padding: 25px 15px;
+    margin: 10px;
+}
+.aboutcontent h1{
+    font-size: 26px;
+    padding: 10px;
+}
+.aboutcontent p{
+    font-size: 16px;
+    padding: 10px;
+}
+.aboutcontent .aboutlist ul li{
+    list-style-type: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.aboutcontent .aboutlist i{
+    color: rgb(55, 89, 3);
+    font-size: 28px;
+}
+.readmore a{
+    color: #fb2162;
+    text-decoration: none;
+    padding: 10px;
+}
+.aboutsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 40px;
+}
+/* team */
+.teamsection{
+    padding: 75px 40px;
+    background-color: aliceblue;
+}
+.teamperson img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid #ec7499;
+}
+.teamperson{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 20px solid #f2326c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.persondesig{
+    background-color: rgb(203, 222, 240);
+    width: 280px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+    left: -6px;
+}
+.team{
+    width: 290px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* learn */
+.learnbox{
+    /* background-color: antiquewhite; */
+    padding: 20px 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.learnicon{
+    padding: 10px;
+}
+.learnicon i{
+    color: #40adad;
+    font-size: 60px;
+}
+.learncontent{
+    padding: 10px;
+}
+.learncontent h3{
+    font-size: 24px;
+    padding: 10px 0;
+}
+.learnboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learnboxes .Effective{
+    background: radial-gradient(circle,rgba(63, 94, 251, 0.78) 0%, rgba(252, 70, 107, 1) 100%);
+    border-radius: 10px;
+    color: #fff;
+}
+.learn{
+    padding: 75px 40px;
+}
+
+/* contact */
+.contactsec{
+    padding: 75px 40px;
+  background: radial-gradient(circle,rgba(63, 94, 251, 0.78) 0%, rgba(252, 70, 107, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.contactleft{
+    /* background-color: rgb(48, 32, 10); */
+    padding: 20px 15px;
+    margin: 10px;
+    width: 600px;
+}
+.contactleft h1{
+    font-size: 36px;
+    color: #fff;
+    padding: 10px;
+}
+.contactleft p{
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+}
+.contactleft .btngrp button{
+    padding: 10px 30px;
+    margin: 10px 5px;
+}
+
+.contactleft .btngrp button:nth-child(1){
+    background-color: #10b888;
+    border: 1px solid #10b888;
+    border-radius: 5px;
+    color: #fff;
+}
+.contactleft .btngrp button:nth-child(1):hover{
+    background-color: #046046;
+    border: none;
+    font-weight: 700;
+}
+.contactleft .btngrp button:nth-child(2){
+    background-color: #ecefee;
+    border: 1px solid #ecefee;
+    border-radius: 5px;
+    color: #212121;
+}
+.contactleft .btngrp button:nth-child(2):hover{
+    background-color: #d2e9e2;
+    border: none;
+    font-weight: 700;
+}
+.inputs{
+    margin: 10px 5px;
+}
+.inputs input,.inputs textarea{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid grey;
+    outline: none;
+}
+.btngrp button{
+    padding: 10px 30px;
+    margin: 10px 5px;
+}
+
+.btngrp button:nth-child(1){
+    background-color: #10b888;
+    border: 1px solid #10b888;
+    border-radius: 5px;
+    color: #fff;
+}
+.btngrp button:nth-child(1):hover{
+    background-color: #046046;
+    border: none;
+    font-weight: 700;
+}
+.contactform{
+    background-color: #f3f5f4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #303030;
+}
+.inputs p{
+    color: #e33168;
+    padding: 10px;
+}
+
+
+
+        @media (min-width:320px) and (max-width: 480px){
+            header{
+                display: block;
+                position: relative;
+            }
+            .navbar ul li{
+                display: block;
+            }
+            header .logo .menutoggle{
+            display: block;
+            }
+            .logo{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .menutoggle i{
+                color: #fff;
+                font-size: 36px;
+                padding: 10px;
+            }
+            .navbar{
+                background-color: #000;
+                position: absolute;
+                left: -99%;
+                width: 100%;
+                padding: 10px;
+            }
+            .aboutsection{
+                display: block;
+                padding: 75px 0;
+            }
+            .aboutimg img{
+                width: 300px;
+            }
+            .aboutimg .aboutimgcontent {
+            background: radial-gradient(circle, rgba(63, 94, 251, 0.78) 0%, rgb(252 70 107 / 57%) 100%);
+            width: 300px;
+            bottom: 0;
+            left: 0;
+        }
+        .aboutimg,.aboutcontent{
+            width: inherit;
+        }
+        .teams{
+            display: block;
+        }
+        .heading h1{
+            font-size: 26px;
+        }
+        .heading .line hr{
+            width: inherit;
+        }
+        .teamsection,.learn{
+            padding:75px 0 ;
+        }
+        .learnboxes{
+            display: block;
+        }
+        .learnbox{
+            display: block;
+        }
+        .learncontent h3{
+            font-size: 20px;
+        }
+        .contactsec{
+            padding: 75px 0;
+            display: block;
+        }
+        .contactleft{
+            width: inherit;
+        }
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" alt="logo">
+                <div class="menutoggle">
+                    <i class='bxr  bx-menu'  ></i> 
+                </div>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#team">Learn</a></li>
+                    <li class="supermenu"><a href="#">Demos</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Mobile Demo</a></li>
+                            <li><a href="#">Tablet Demo</a></li>
+                            <li><a href="#">Laptop Demo</a></li>
+                            <li><a href="#">Desktop Demo</a></li>
+                        </ul>
+                    </li>
+                    <li class="btncontact"><a href="#contactsection">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="aboutsection">
+            <div class="aboutimg">
+                <img src="assets/about.jpg" alt="about">
+                <div class="aboutimgcontent">
+                    <p>Our HTML AMP Business School Template has only one mission - help you make first steps and launch your start-up and keep your business growing.</p>
+                </div>
+            </div>
+            <div class="aboutcontent">
+                <h1>Launch A Unique Project</h1>
+                <p>
+                Launching a project can be challenging, and AMP HTML Business School Template will help you take your fears down and set up your own free AMP templates.</p>
+                <div class="aboutlist">
+                    <ul>
+                        <li> <i class='bxr  bx-check-square'  ></i>  Realize The Best Ideas</li>
+                        <li><i class='bxr  bx-check-square'  ></i> Create An Effective Team</li>
+                        <li><i class='bxr  bx-check-square'  ></i> Launch A Unique Project</li>
+                        <li><i class='bxr  bx-check-square'  ></i> Manage A Talented Team</li>
+                    </ul>
+                </div>
+                <div class="readmore">
+                    <a href="#">Read more <i class='bxr  bx-arrow-right-stroke'  ></i> </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="teamsection" id="team">
+            <div class="heading">
+                <h1>  Out Team </h1>
+                <p>
+Be successful. Find partners. Build your startup. 
+              </p>
+                <div class="line"><hr></div>
+            </div>
+            <div class="teams">
+                <div class="team">
+                    <div>
+                        <div class="teamperson">
+                    <img src="assets/face1.jpg" alt="team">
+                    </div>
+                    <div class="persondesig">
+                        <h4>Jane Smith</h4>
+                        <p>Lead</p>
+                    </div>
+                    </div>
+                </div>
+                 <div class="team">
+                    <div>
+                        <div class="teamperson">
+                    <img src="assets/face1.jpg" alt="team">
+                    </div>
+                    <div class="persondesig">
+                        <h4>Jane Smith</h4>
+                        <p>Lead</p>
+                    </div>
+                    </div>
+                </div>
+                 <div class="team">
+                    <div>
+                        <div class="teamperson">
+                    <img src="assets/face1.jpg" alt="team">
+                    </div>
+                    <div class="persondesig">
+                        <h4>Jane Smith</h4>
+                        <p>Lead</p>
+                    </div>
+                    </div>
+                </div>
+                 <div class="team">
+                    <div>
+                        <div class="teamperson">
+                    <img src="assets/face1.jpg" alt="team">
+                    </div>
+                    <div class="persondesig">
+                        <h4>Jane Smith</h4>
+                        <p>Lead</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learn">
+             <div class="heading">
+                <h1> <span>What</span>  will you learn?</h1>
+                <p>
+                Learn to study, live and work in a competitive business area.
+                </p>
+                <div class="line"><hr></div>
+            </div>
+
+            <div class="learnboxes">
+                <div class="learnbox">
+                    <div class="learnicon">
+                        <i class="bx  bx-light-bulb-on"></i>
+                    </div>
+                    <div class="learncontent">
+                        <h3>Realize The Best Ideas</h3>
+                        <p>Looking for an inspiration? Read success stories of our clients about using AMP HTML Business School Template. Reach your full potential and we help you recognize what you are up to with AMP HTML Business School Template.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learnbox">
+                    <div class="learnicon">
+                        <i class="bx  bx-light-bulb-on"></i>
+                    </div>
+                    <div class="learncontent">
+                        <h3>Realize The Best Ideas</h3>
+                        <p>Looking for an inspiration? Read success stories of our clients about using AMP HTML Business School Template. Reach your full potential and we help you recognize what you are up to with AMP HTML Business School Template.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learnboxes">
+                <div class="learnbox">
+                    <div class="learnicon">
+                        <i class="bx  bx-light-bulb-on"></i>
+                    </div>
+                    <div class="learncontent">
+                        <h3>Realize The Best Ideas</h3>
+                        <p>Looking for an inspiration? Read success stories of our clients about using AMP HTML Business School Template. Reach your full potential and we help you recognize what you are up to with AMP HTML Business School Template.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learnbox">
+                    <div class="learnicon">
+                        <i class="bx  bx-light-bulb-on"></i>
+                    </div>
+                    <div class="learncontent">
+                        <h3>Realize The Best Ideas</h3>
+                        <p>Looking for an inspiration? Read success stories of our clients about using AMP HTML Business School Template. Reach your full potential and we help you recognize what you are up to with AMP HTML Business School Template.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learnboxes">
+                <div class="learnbox">
+                    <div class="learnicon">
+                        <i class="bx  bx-light-bulb-on"></i>
+                    </div>
+                    <div class="learncontent">
+                        <h3>Realize The Best Ideas</h3>
+                        <p>Looking for an inspiration? Read success stories of our clients about using AMP HTML Business School Template. Reach your full potential and we help you recognize what you are up to with AMP HTML Business School Template.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learnbox  Effective">
+                    <div class="learncontent">
+                        <h3>Create An Effective Team</h3>
+                        <p>Looking for an inspiration? Read success stories of our clients about using AMP HTML Business School Template. Reach your full potential and we help you recognize what you are up to with AMP HTML Business School Template.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contactsec" id="contactsection">
+            <div class="contactleft">
+                <h1>Sign up for training now!</h1>
+                <p>Our AMP HTML Business School Template has only one mission - help you make first steps and launch your start-up and keep your business growing. With our courses you will gain deep knowledge on how the current marketing works, how to manage your time and investments and find innovative ideas.</p>
+                <div class="btngrp">
+                    <button> <i class='bxr  bx-arrow-up-stroke'  ></i>  Get Started</button>
+                    <button> <i class='bxr  bx-arrow-right-stroke'  ></i>  More Info</button>
+                </div>
+            </div>
+            <div class="contactright">
+                <div class="contactform">
+                    <h4>Contact Us</h4>
+                    <p>Reach out to us to find out more on AMP HTML Business
+                         School Template.</p>
+                    
+                    <form id="form">
+                        <div class="inputs">
+                            <input type="text" name="username" id="fullname" placeholder="Enter your Name" >
+                            <p id="nameerror"></p>
+                        </div>
+                        <div class="inputs">
+                            <input type="tel" name="userphone" id="userphone" placeholder="Enter your Phone Number" >
+                            <p id="phoneerror"></p>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" name="useremail" id="useremail" placeholder="Enter your Email" >
+                            <p id="emailerror"></p>
+                        </div>
+                        <div class="inputs">
+                            <textarea name="message" id="message" placeholder="Enter your Comments"></textarea>
+                            <p id="commentserror"></p>
+                        </div>
+                        <div class="btngrp">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form> 
+                    
+                    <script>
+                        let myformData = document.getElementById("form");
+                        myformData.addEventListener("submit",(event)=>{
+                            event.preventDefault();
+
+                            let userName= document.getElementById("fullname").value.trim();
+                            let userPhone= document.getElementById("userphone").value.trim();
+                            let userGmail = document.getElementById("useremail").value.trim();
+                            let userComments = document.getElementById("message").value.trim();
+
+                            let nameError = document.getElementById("nameerror");
+                            let phoneError = document.getElementById("phoneerror");
+                            let emailError = document.getElementById("emailerror");
+                            let commentsError = document.getElementById("commentserror");
+
+                            // nameError.textContent="";
+
+                            let isValid = true;
+
+                            if(! userName){
+                                nameError.textContent="please fill the Name data";
+                                isValid=false;
+                            };
+                            // let phonepattern =/^\d{3}-\d{3}-\d{4}$/;
+                            if(!userPhone){
+                                phoneError.textContent="please fill the Phone data";
+                                isValid=false;
+                            }
+                            // else if(!phonepattern.test(userPhone)){
+                            //      phoneError.textContent="please fill the valid 10 digit Phone data";
+                            //     isValid=false;
+                            // }
+
+
+                            let emailpattern =/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                            if(!userGmail){
+                                emailError.textContent="please fill the Email data";
+                                isValid=false;
+                            }
+                            else if(!emailpattern.test(userGmail)){
+                                emailError.textContent="please fill the valid Email data";
+                                isValid=false;
+                            }
+
+                            if(!userComments.length >5){
+                                commentsError.textContent="please fill the FeedBAck data";
+                                isValid=false;
+                            }
+
+                            if(isValid){
+                                alert("User Data Updated Succefully 👍");
+                                console.log("User Name "+ userName);
+                                console.log("User Phone "+ userPhone);
+                                console.log("User Gmail "+ userGmail);
+                                console.log("User Comments "+ userComments);
+                            }
+
+                            myformData.reset();
+
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- <section>
+            <div>
+                <div class="contactleft">
+                    <h1>Sign up for training now!</h1>
+                    <p>Our AMP HTML Business School Template has only one mission - help you make first steps and launch your start-up and keep your business growing. With our courses you will gain deep knowledge on how the current marketing works, how to manage your time and investments and find innovative ideas.</p>
+                    <div class="btngrp">
+                        <button> <i class='bxr  bx-arrow-up-stroke'  ></i>  Get Started</button>
+                        <button> <i class='bxr  bx-arrow-right-stroke'  ></i>  More Info</button>
+                    </div>
+                </div>
+            </div>
+
+<div class="contactleft">
+                    <h1>Sign up for training now!</h1>
+                    <p>Our AMP HTML Business School Template has only one mission - help you make first steps and launch your start-up and keep your business growing. With our courses you will gain deep knowledge on how the current marketing works, how to manage your time and investments and find innovative ideas.</p>
+                    <div class="btngrp">
+                        <button> <i class='bxr  bx-arrow-up-stroke'  ></i>  Get Started</button>
+                        <button> <i class='bxr  bx-arrow-right-stroke'  ></i>  More Info</button>
+                    </div>
+                </div>
+
+            <div>
+
+            </div>
+        </section> -->
+
+ <footer>
+            <p>All right reserved by <a href="#">startuptech@gmail.com</a></p>
+        </footer>
+
+
+</body>
+</html>
